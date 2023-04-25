@@ -1,4 +1,4 @@
-import { Suspense, lazy } from "react";
+import { Suspense, lazy } from "react";// use to loading , loading screen until full page is load
 import { Navigate, useRoutes } from "react-router-dom";
 
 // layouts
@@ -10,7 +10,7 @@ import LoadingScreen from "../components/LoadingScreen";
 
 const Loadable = (Component) => (props) => {
   return (
-    <Suspense fallback={<LoadingScreen />}>
+    <Suspense fallback={<LoadingScreen />}> 
       <Component {...props} />
     </Suspense>
   );
