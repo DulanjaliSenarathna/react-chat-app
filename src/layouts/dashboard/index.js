@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Outlet } from "react-router-dom";
 import { Avatar, Box, Divider, IconButton, Stack, Switch } from '@mui/material';
 import { useTheme , styled} from "@mui/material/styles";
-import  img_avatar  from "../../assets/Images/img_avatar.png";
+import { faker } from '@faker-js/faker';
 
 import Logo from '../../assets/Images/logo.ico';
 import { Nav_Buttons } from '../../data'
@@ -66,8 +66,10 @@ const DashboardLayout = () => {
 
   return (
     <>
-      <Box p={2} sx={{ backgroundColor: theme.palette.background.paper, boxShadow: "0px 0px 2px rgba(0,0,0,0.25)", height: "100vh", width: 100 }}>
-        <Stack direction="column" alignItems={"center"} justifyContent="space-between" sx={{ width: "100%" , height: "100%"}} spacing={3}>
+      <Box p={2} sx={{ backgroundColor: theme.palette.background.paper, 
+        boxShadow: "0px 0px 2px rgba(0,0,0,0.25)", height: "100vh", width: 100, display:"flex" }}>
+        <Stack direction="column" alignItems={"center"} justifyContent="space-between" 
+        sx={{ width: "100%" , height: "100%"}} spacing={3}>
           <Stack alignItems={"center"} spacing={4}>
           <Box sx={{
             backgroundColor: theme.palette.primary.main,
@@ -80,13 +82,15 @@ const DashboardLayout = () => {
           <Stack sx={{ width: "max-content" }} direction="column" alignItems="center" spacing={3}>
             {Nav_Buttons.map((el) => (
               el.index === selected ?
-                <Box sx={{ backgroundColor: theme.palette.primary.main, borderRadius: 1.5 }}>
+                <Box key={""} sx={{ backgroundColor: theme.palette.primary.main, borderRadius: 1.5 }}>
                   <IconButton sx={{ width: "max-content", color: "#fff" }} key={el.index}>
                     {el.icon}
                   </IconButton>
                 </Box>
                 :
-                <IconButton onClick={() => { setSelected(el.index) }} sx={{ width: "max-content", color:theme.palette.mode === 'light' ? "#000" : theme.palette.text.primary }} key={el.index}>
+                <IconButton onClick={() => { setSelected(el.index) }} 
+                sx={{ width: "max-content", color:theme.palette.mode === 'light' ? "#000" 
+                : theme.palette.text.primary }} key={el.index}>
                   {el.icon}
                 </IconButton>
             ))}
@@ -98,7 +102,8 @@ const DashboardLayout = () => {
                 </IconButton>
               </Box>
               :
-              <IconButton onClick={() => { setSelected(3) }} sx={{ width: "max-content", color: theme.palette.mode === 'light' ? "#000" :theme.palette.text.primary }} >
+              <IconButton onClick={() => { setSelected(3) }} sx={{ width: "max-content",
+               color: theme.palette.mode === 'light' ? "#000" :theme.palette.text.primary }} >
                 <Gear />
               </IconButton>
             }
@@ -111,15 +116,17 @@ const DashboardLayout = () => {
             <AntSwitch onChange={()=>{
                 onToggleMode();
             }} defaultChecked/>
-            <Avatar src={img_avatar}/>
+            <Avatar src={faker.image.avatar()}/>
           </Stack>
          
-
+          
         </Stack>
-
+        
       </Box>
+      
       <Outlet />
     </>
+    
   );
 };
 
