@@ -1,14 +1,24 @@
 import React ,{ useState } from 'react';
-import { Avatar, Box, Divider, IconButton, Stack, Switch } from '@mui/material';
+import { Avatar, Box, Divider, IconButton, Menu, MenuItem, Stack, Switch } from '@mui/material';
 import { useTheme } from "@mui/material/styles";
 import { Gear } from "phosphor-react";
-import { Nav_Buttons } from '../../data'
+import { Nav_Buttons, Profile_Menu } from '../../data'
 import useSettings from '../../hooks/useSettings';
 import { faker } from '@faker-js/faker';
 import AntSwitch from '../../components/AntSwitch';
 import Logo from '../../assets/Images/logo.ico';
 
 const SideBar = () => {
+
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
     const theme = useTheme();
      // state for selected button
     const [selected, setSelected] = useState(0); // by default 0 index button is selected
@@ -65,10 +75,36 @@ const SideBar = () => {
             <AntSwitch onChange={()=>{
                 onToggleMode();
             }} defaultChecked/>
-            <Avatar src={faker.image.avatar()}/>
-          </Stack>
-         
-          
+            <Avatar id='basic-button' sx={{cursor:'pointer'}}
+            src={faker.image.avatar()}
+            aria-controls={open ? 'basic-menu' : undefined}
+            aria-haspopup="true"
+            aria-expanded={open ? 'true' : undefined}
+            onClick={handleClick}/>
+            <Menu
+              id="basic-menu"
+              anchorEl={anchorEl}
+              open={open}
+              onClose={handleClose}
+              MenuListProps={{
+                'aria-labelledby': 'basic-button',
+              }}
+              anchorOrigin={{vertical:'bottom', horizontal:'right'}}
+              transformOrigin={{vertical:'bottom', horizontal:'left'}}
+            >
+            <Stack spacing={1} px={1}>
+              {Profile_Menu.map((el)=>(
+                  <MenuItem onClick={handleClick}>
+                    <Stack sx={{width:100}} direction='row' alignItems={'center'}
+                     justifyContent='space-between'>
+                      <span>{el.title}</span>
+                      {el.icon}
+                    </Stack>  
+                  </MenuItem>
+              ))}
+            </Stack>
+          </Menu>
+          </Stack>   
         </Stack>
         
       </Box>

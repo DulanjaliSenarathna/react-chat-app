@@ -152,7 +152,8 @@ const MessageOptions = () => {
     aria-haspopup="true"
     aria-expanded={open ? 'true' : undefined}
     onClick={handleClick}
-    size={20}/>
+    size={20}
+    />
 
     <Menu
         id="basic-menu"
