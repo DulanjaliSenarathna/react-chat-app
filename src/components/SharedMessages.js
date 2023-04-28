@@ -5,6 +5,8 @@ import { useDispatch } from 'react-redux';
 import { UpdateSidebarType } from '../redux/slices/app';
 import { CaretLeft, X } from 'phosphor-react';
 import { faker } from '@faker-js/faker';
+import { SHARED_DOCS, SHARED_LINKS } from '../data';
+import {DocMsg, LinkMsg} from './Conversation/MsgTypes'
 
 const SharedMessages = () => {
     const theme = useTheme();
@@ -45,7 +47,7 @@ const SharedMessages = () => {
 
         {/* Body */}
         <Stack sx={{height:'100%', position:'relative', flexGrow:1, overflowY:'scroll'}} p={3}
-        spacing={3}>
+        spacing={value === 1 ? 1 :3}>
             {(()=>{
                 switch (value) {
                     case 0:
@@ -61,11 +63,11 @@ const SharedMessages = () => {
                         </Grid>
                         
                     case 1:
-                        //Links
-                        break;
+                        return SHARED_LINKS.map((el)=> <LinkMsg el={el}/>)
+                        
                     case 2:
-                        //Docs
-                        break;
+                        return SHARED_DOCS.map((el)=> <DocMsg el={el}/>)
+                        
                     default:
                         break;
                 }
