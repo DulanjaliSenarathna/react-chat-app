@@ -1,11 +1,23 @@
 import { Avatar, Box, Divider, IconButton, Stack, Typography } from '@mui/material'
-import React from 'react';
+import React, {useState} from 'react';
 import { useTheme } from "@mui/material/styles";
 import { Bell, CaretLeft, Image, Info, Key, Keyboard, Lock, Note, PencilCircle } from 'phosphor-react';
 import { faker } from '@faker-js/faker';
+import Shortcuts from '../../sections/settings/Shortcuts';
 
 const Settings = () => {
+
     const theme = useTheme();
+
+    const [openShortcuts, setOpenShortcuts] = useState(false);
+
+    const handleOpenShortcuts = ()=>{
+        setOpenShortcuts(true);
+    }
+
+    const handleCloseShortcuts = ()=>{
+        setOpenShortcuts(false);
+    }
 
     const list = [
       {
@@ -49,8 +61,7 @@ const Settings = () => {
         key:6,
         icon: <Keyboard size={20}/>,
         title: 'Keyboard Shortcuts',
-        //onclick: handleOpenShortcuts
-        onclick: () =>{}
+        onclick: handleOpenShortcuts
       },
       {
         key:7,
@@ -90,12 +101,12 @@ const Settings = () => {
                 {/* List of options */}
                 <Stack spacing={4}>
                     {list.map(({key,icon,title,onclick})=> <>
-                        <Stack spacing={2} sx={{cursor:'pointer'}} onclick={onclick}>
+                        <Stack spacing={2} sx={{cursor:'pointer'}} onClick={onclick}>
                             <Stack direction='row' spacing={2} >
                                 {icon}
                                 <Typography variant='body2'>{title}</Typography>
                             </Stack>
-                            {key != 7 && <Divider/>}
+                            {key !== 7 && <Divider/>}
                         </Stack>
                     </>)}
                 </Stack>
@@ -103,6 +114,8 @@ const Settings = () => {
         </Box>
         {/* Right panel */}
     </Stack>
+    {openShortcuts && <Shortcuts open={openShortcuts} handleClose={handleCloseShortcuts}/>}
+     
     </>
   )
 }
