@@ -23,7 +23,7 @@ const LoginForm = () => {
   };
 
   const methods = useForm({
-    resolver: yupResolver(LoginForm),
+    resolver: yupResolver(loginSchema),
     defaultValues
   });
 
@@ -61,7 +61,7 @@ const LoginForm = () => {
         )}}/>
         </Stack>
         <Stack alignItems={'flex-end'} sx={{my:2}}>
-            <Link variant='body2' color='inherit' underline='always'>Forgor Password?</Link>
+            <Link variant='body2' color='inherit' underline='always'>Forgot Password?</Link>
         </Stack>
         <Button fullWidth color='inherit' size='large' type='submit' variant='contained'
         sx={{bgcolor:'text.primary', color:(theme)=> theme.palette.mode === 'light' ?
