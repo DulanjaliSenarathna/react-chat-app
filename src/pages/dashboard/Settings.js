@@ -75,7 +75,7 @@ const Settings = () => {
     <>
     <Stack direction='row' sx={{width:'100%'}}>
         {/* Left panel */}
-        <Box sx={{overflow:'scroll', height:'100vh', width:320, 
+        <Box className='scrollbar' sx={{overflow:'scroll', height:'100vh', width:320, 
         backgroundColor:theme.palette.mode === 'light' ? '#F8FAFF' : theme.palette.background,
         boxShadow:'0px 0px 2px rgba(0)'}}>
             <Stack p={4} spacing={5}>

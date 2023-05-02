@@ -46,7 +46,7 @@ const SharedMessages = () => {
         </Tabs>
 
         {/* Body */}
-        <Stack sx={{height:'100%', position:'relative', flexGrow:1, overflowY:'scroll'}} p={3}
+        <Stack className='scrollbar' sx={{height:'100%', position:'relative', flexGrow:1, overflowY:'scroll'}} p={3}
         spacing={value === 1 ? 1 :3}>
             {(()=>{
                 switch (value) {

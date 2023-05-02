@@ -6,6 +6,7 @@ import { useDispatch } from 'react-redux';
 import { ToggleSidebar, UpdateSidebarType } from '../redux/slices/app';
 import { faker } from '@faker-js/faker';
 import AntSwitch from './AntSwitch';
+import '../css/global.css';
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -92,7 +93,7 @@ const Contact = () => {
           </Stack>
         </Box>
         {/* Body */}
-        <Stack sx={{height:'100%', position:'relative', flexGrow:1, overflowY:'scroll'}} p={3}
+        <Stack className='scrollbar'  sx={{height:'100%', position:'relative', flexGrow:1, overflowY:'scroll'}} p={3}
         spacing={3}>
           <Stack alignItems={'center'} direction='row' spacing={2}>
             <Avatar src={faker.image.avatar()} alt={faker.name.firstName} sx={{height:64, width:64}}/>
