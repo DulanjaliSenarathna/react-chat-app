@@ -1,13 +1,10 @@
-import React , { useState } from 'react';
+import React  from 'react';
 import * as Yup from 'yup';
 import { useForm } from 'react-hook-form';
 import FormProvider from '../../components/hook-form/FormProvider'
 import { yupResolver } from '@hookform/resolvers/yup';
-import { Alert, Button, IconButton, InputAdornment, Link, Stack } from '@mui/material';
+import { Alert, Button, Stack } from '@mui/material';
 import { RHFTextField } from '../../components/hook-form';
-import { Eye, EyeSlash } from 'phosphor-react';
-import { Link as RouterLink } from 'react-router-dom';
-import { useCallback } from 'react';
 
 const ProfileForm = () => {
 
@@ -28,22 +25,8 @@ const ProfileForm = () => {
     defaultValues
   });
 
-  const {reset, watch, control, setError, setValue, handleSubmit, formState:{errors, isSubmitting, isSubmitSuccessful}}
+  const {reset, setError, handleSubmit, formState:{errors}}
    = methods;
-
-   const values = watch();
-
-   const handleDrop = useCallback((acceptedFiles)=>{
-        const file = acceptedFiles[0];
-
-        const newFile = Object.assign(file,{
-            preview: URL.createObjectURL(file)
-        })
-
-        if(file){
-            setValue('avatarUrl',{shouldValidate:true})
-        }
-   },[setValue]);
 
    const onSubmit = async (data) =>{
         try {

@@ -4,6 +4,7 @@ import { useTheme } from "@mui/material/styles";
 import { Bell, CaretLeft, Image, Info, Key, Keyboard, Lock, Note, PencilCircle } from 'phosphor-react';
 import { faker } from '@faker-js/faker';
 import Shortcuts from '../../sections/settings/Shortcuts';
+import Conversation from '../../components/Conversation';
 
 const Settings = () => {
 
@@ -78,6 +79,7 @@ const Settings = () => {
         <Box className='scrollbar' sx={{overflow:'scroll', height:'100vh', width:320, 
         backgroundColor:theme.palette.mode === 'light' ? '#F8FAFF' : theme.palette.background,
         boxShadow:'0px 0px 2px rgba(0)'}}>
+          
             <Stack p={4} spacing={5}>
                 {/* Header */}
                 <Stack direction={'row'} alignItems='center' spacing={3}>
@@ -111,8 +113,10 @@ const Settings = () => {
                     </>)}
                 </Stack>
             </Stack>
+            
         </Box>
         {/* Right panel */}
+        
     </Stack>
     {openShortcuts && <Shortcuts open={openShortcuts} handleClose={handleCloseShortcuts}/>}
      

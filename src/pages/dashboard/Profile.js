@@ -2,6 +2,7 @@ import { Box, IconButton, Stack, Typography } from '@mui/material'
 import { CaretLeft } from 'phosphor-react'
 import React from 'react'
 import ProfileForm from '../../sections/settings/ProfileForm'
+import Conversation from '../../components/Conversation'
 
 const Profile = () => {
   return (
@@ -23,7 +24,9 @@ const Profile = () => {
             {/* Profile Form */}
             <ProfileForm/>
         </Stack>
+       
     </Box>
+    
     </Stack>
     </>
   )

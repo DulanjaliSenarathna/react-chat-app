@@ -1,4 +1,4 @@
-import { Dialog, DialogContent, DialogTitle, Slide, Stack,Button } from '@mui/material'
+import { Dialog, DialogContent, DialogTitle, Slide, Stack } from '@mui/material'
 import React from 'react';
 import { Search, SearchIconWrapper, StyledInputBase } from '../../components/Search';
 import { MagnifyingGlass } from 'phosphor-react';
