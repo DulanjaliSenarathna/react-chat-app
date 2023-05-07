@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+# WeChat - React Js Chat App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**live demo: [https://react-chat-app-kohl.vercel.app/app](https://react-chat-app-kohl.vercel.app/app)**
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+### Made with ❤️ by [Dulanjali Senarathna](https://www.linkedin.com/in/dulanjali-senarathna/)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project Description
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Mainly focused on react js front-end development. I used css for styling. Also, this application used React Context API and redux for state management.
 
-### `npm test`
+This chat app has basic chat app functionalities such as login, register, reset password, chat, conversation, group call, contact, starred messages, medial, files and links, settings, profile, edit profile, emoji pickers and etc. We can implement all the features using backend in future. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+You can change theming colors and dark and light modes by clicking settings icon in bottom-left cornaer.
 
-### `npm run build`
+## What I used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [React](https://reactjs.org/)
+- [React Context API](https://legacy.reactjs.org/docs/context.html)
+- [Redux](https://redux.js.org/)
+- [Faker js](https://fakerjs.dev/)
+- [phosphor-react](https://www.npmjs.com/package/phosphor-react)
+- [Emoji Mart](https://www.npmjs.com/package/emoji-mart)
+- [React Hook Form](https://react-hook-form.com/)
+- [Yup js](https://www.npmjs.com/package/yup)
+- More...
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Requirements
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Basic ReactJs knowledge
+- Basic HTML, CSS knowledge
 
-### `npm run eject`
+## Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+After getting the project files, you need to go the file directory and run
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```shell
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+and after that start the dev server.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```shell
+npm run start
+```
 
-## Learn More
+## Tools Used
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Favicon: [Flaticon.com](https://www.flaticon.com/)
+1. Code Editor: [VS Code](https://code.visualstudio.com/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## FAQ
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Q: What are the prerequisites?
 
-### Analyzing the Bundle Size
+basics of html, css, javascript and some basic knowledge of react is enough to start this project. Rest you will learn in the tutorial.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Q: Who the project is for?
 
-### Making a Progressive Web App
+The project is for the people who wanna get more skilled in `ReactJs`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## Feedback
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+If you have any feedback, please reach out to us at [Dulanjali Senarathna](https://www.behance.net/dulanjasenarathna)
 
-### Deployment
+Happy Coding! 🚀
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+# Website's screenshots
 
-### `npm run build` fails to minify
+![2](https://user-images.githubusercontent.com/59603716/234086950-f378ce01-f2d8-4056-be57-b8968a148e46.PNG)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![1](https://user-images.githubusercontent.com/59603716/234086939-577fe59c-86d3-4200-8b2f-e96d3597379e.PNG)
+
+![3](https://user-images.githubusercontent.com/59603716/234086960-09653f12-3f85-4655-9d7e-34eac5a2e690.PNG)
+
+![4](https://user-images.githubusercontent.com/59603716/234086970-7780bd14-425b-4873-b8d2-886ffda4b44c.PNG)
+
+![5](https://user-images.githubusercontent.com/59603716/234086990-32363c99-0797-40ea-a8f0-b36f720fbb11.PNG)
+
+![6](https://user-images.githubusercontent.com/59603716/234087014-93057f03-95d9-4e0f-af66-5680371caee7.PNG)
+
+![7](https://user-images.githubusercontent.com/59603716/234087032-fc9e22eb-c849-4fcf-98b8-333bec455a0b.PNG)
+
+![8](https://user-images.githubusercontent.com/59603716/234087049-6b73c946-b432-4dd4-9669-6f1aa2de8e94.PNG)
+
+![9](https://user-images.githubusercontent.com/59603716/234087068-8a9405b5-d4de-44e9-b825-4cae635f452e.PNG)
+
+![10](https://user-images.githubusercontent.com/59603716/234087089-c6ac03b3-bcae-46f9-84f4-39248877a076.PNG)
+
+![11](https://user-images.githubusercontent.com/59603716/234087107-926e391b-3d98-478a-936d-f6beb6de47c1.PNG)
+
+## Dark mode
+
+![12](https://user-images.githubusercontent.com/59603716/234087128-14e3fe56-9f74-49d3-8f7c-0657c6aeb1bb.PNG)
