@@ -74,28 +74,26 @@ Happy Coding! 🚀
 
 # Website's screenshots
 
-![2](https://user-images.githubusercontent.com/59603716/234086950-f378ce01-f2d8-4056-be57-b8968a148e46.PNG)
+![React js chat app 1](https://user-images.githubusercontent.com/59603716/236672849-f2577271-4a2b-4b25-bca2-97755ba0c9c2.jpg)
 
-![1](https://user-images.githubusercontent.com/59603716/234086939-577fe59c-86d3-4200-8b2f-e96d3597379e.PNG)
+![React js chat app 2](https://user-images.githubusercontent.com/59603716/236672853-2e1e2d1a-3e5a-44cd-a472-e0a4285de179.jpg)
 
-![3](https://user-images.githubusercontent.com/59603716/234086960-09653f12-3f85-4655-9d7e-34eac5a2e690.PNG)
+![React js chat app 3](https://user-images.githubusercontent.com/59603716/236672858-8b4a24ec-f287-4161-ae1f-7ed6115e35de.jpg)
 
-![4](https://user-images.githubusercontent.com/59603716/234086970-7780bd14-425b-4873-b8d2-886ffda4b44c.PNG)
+![React js chat app 4](https://user-images.githubusercontent.com/59603716/236672872-b12dbfbb-b73f-47e0-ab53-d53960083888.jpg)
 
-![5](https://user-images.githubusercontent.com/59603716/234086990-32363c99-0797-40ea-a8f0-b36f720fbb11.PNG)
+![React js chat app 5](https://user-images.githubusercontent.com/59603716/236672879-b3f9682c-5ced-4f8e-b3e7-dbbedf901d54.jpg)
 
-![6](https://user-images.githubusercontent.com/59603716/234087014-93057f03-95d9-4e0f-af66-5680371caee7.PNG)
+![React js chat app 6](https://user-images.githubusercontent.com/59603716/236672884-cddfe6bb-5550-484a-a215-08ec09e52365.jpg)
 
-![7](https://user-images.githubusercontent.com/59603716/234087032-fc9e22eb-c849-4fcf-98b8-333bec455a0b.PNG)
+![React js chat app 7](https://user-images.githubusercontent.com/59603716/236672886-080587d0-92f5-476f-ae24-263bfe8ab23d.jpg)
 
-![8](https://user-images.githubusercontent.com/59603716/234087049-6b73c946-b432-4dd4-9669-6f1aa2de8e94.PNG)
+![React js chat app 8](https://user-images.githubusercontent.com/59603716/236672893-bdd01215-3d0c-4a87-98e8-b8410735390c.jpg)
 
-![9](https://user-images.githubusercontent.com/59603716/234087068-8a9405b5-d4de-44e9-b825-4cae635f452e.PNG)
+![React js chat app 9](https://user-images.githubusercontent.com/59603716/236672900-8046f9d1-9d32-4f8b-b443-fa265fa059bd.jpg)
 
-![10](https://user-images.githubusercontent.com/59603716/234087089-c6ac03b3-bcae-46f9-84f4-39248877a076.PNG)
-
-![11](https://user-images.githubusercontent.com/59603716/234087107-926e391b-3d98-478a-936d-f6beb6de47c1.PNG)
+![React js chat app 10](https://user-images.githubusercontent.com/59603716/236672903-d3139cb3-6490-427a-8573-cc9d4956ce60.jpg)
 
 ## Dark mode
 
-![12](https://user-images.githubusercontent.com/59603716/234087128-14e3fe56-9f74-49d3-8f7c-0657c6aeb1bb.PNG)
+![dark mode react js chat app](https://user-images.githubusercontent.com/59603716/236672907-66c3c842-66e8-40bb-9c44-ea1e6f7a29da.JPG)
