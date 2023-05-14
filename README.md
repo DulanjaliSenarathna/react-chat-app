@@ -19,6 +19,7 @@ You can change theming colors and dark and light modes by clicking settings icon
 ## What I used
 
 - [React](https://reactjs.org/)
+- [MAterial UI](https://mui.com/)
 - [React Context API](https://legacy.reactjs.org/docs/context.html)
 - [Redux](https://redux.js.org/)
 - [Faker js](https://fakerjs.dev/)
